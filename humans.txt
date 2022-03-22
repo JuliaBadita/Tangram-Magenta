@@ -4,6 +4,7 @@
 # TEAM
 
     <Julia Badita> -- <Développeuse web junior>
+    <Pierre-Yves DELETTRE> -- <Web Dev - soon>
 
 # THANKS
 
