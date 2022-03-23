@@ -1,29 +1,31 @@
 /// Bat Tangram
 
-.big-triangle-1 {
-    transform: rotate(-65deg) translate(-45%, 64%);
-}
-
-.big-triangle-2 {
-    transform: rotate(25deg) translate(-35%, 45%);
-}
-
-.small-square {
-    transform: rotate(25deg) translate(15%, 95%);
-}
-
-.small-triangle-1 {
-    transform: rotate(-65deg) translate(-20%, 40%);
-}
-
-.small-triangle-2 {
-    transform: rotate(25deg) translate(15%, 45%);
-}
-
-.medium-triangle {
-    transform: rotate(-200deg) translate(15%, -69%);
-}
-
-.parallelogram {
-    transform: rotate(-20deg) translate(-115%, 69%);
+.bat {
+    .big-triangle-1 {
+        transform: rotate(-65deg) translate(-45%, 64%);
+    }
+    
+    .big-triangle-2 {
+        transform: rotate(25deg) translate(-35%, 45%);
+    }
+    
+    .small-square {
+        transform: rotate(25deg) translate(15%, 95%)
+    }
+    
+    .small-triangle-1 {
+        transform: rotate(-65deg) translate(-20%, 40%);
+    }
+    
+    .small-triangle-2 {
+        transform: rotate(25deg) translate(15%, 45%);
+    }
+    
+    .medium-triangle {
+        transform: rotate(-200deg) translate(15%, -69%);
+    }
+    
+    .parallelogram {
+        transform: rotate(-20deg) translate(-115%, 69%);
+    }
 }

@@ -508,31 +508,25 @@ body {
   background-color: #5656b1;
 }
 
-.big-triangle-1 {
+.bat .big-triangle-1 {
   transform: rotate(-65deg) translate(-45%, 64%);
 }
-
-.big-triangle-2 {
+.bat .big-triangle-2 {
   transform: rotate(25deg) translate(-35%, 45%);
 }
-
-.small-square {
+.bat .small-square {
   transform: rotate(25deg) translate(15%, 95%);
 }
-
-.small-triangle-1 {
+.bat .small-triangle-1 {
   transform: rotate(-65deg) translate(-20%, 40%);
 }
-
-.small-triangle-2 {
+.bat .small-triangle-2 {
   transform: rotate(25deg) translate(15%, 45%);
 }
-
-.medium-triangle {
+.bat .medium-triangle {
   transform: rotate(-200deg) translate(15%, -69%);
 }
-
-.parallelogram {
+.bat .parallelogram {
   transform: rotate(-20deg) translate(-115%, 69%);
 }
 
