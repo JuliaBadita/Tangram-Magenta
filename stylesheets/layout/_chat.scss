@@ -1,0 +1,24 @@
+/* Transformation en chat */
+.chat {
+  .big-triangle-1 {
+    transform: translate(-45.8%, 82.3%) rotate(180deg);
+  }
+  .big-triangle-2 {
+    transform: translate(-45.7%, 153%) rotate(225deg);
+  }
+  .medium-triangle {
+    transform: translate(-31.2%, 68%) rotate(45deg);
+  }
+  .small-triangle-1{
+    transform: translate(40%, -31.7%) rotate(-90deg);
+  }
+  .small-triangle-2 {
+    transform: translate(15%, -6.6%);
+  }
+  .small-square {
+    transform: translate(15%, 43.4%);
+  }
+  .parallelogram {
+    transform: translate(-116%, 152.9%) rotate(-45deg);
+  }
+}

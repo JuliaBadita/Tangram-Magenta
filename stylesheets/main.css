@@ -455,12 +455,15 @@ body {
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 
 .canvas {
   width: 25%;
   height: 25%;
   position: absolute;
+  transition-duration: 500ms;
+  transition-property: transform;
 }
 
 .big-triangle-1 {
@@ -505,10 +508,6 @@ body {
   background-color: #5656b1;
 }
 
-.button {
-  position: relative;
-}
-
 .big-triangle-1 {
   transform: rotate(-65deg) translate(-45%, 64%);
 }
@@ -535,6 +534,52 @@ body {
 
 .parallelogram {
   transform: rotate(-20deg) translate(-115%, 69%);
+}
+
+/* Transformation en chat */
+.chat .big-triangle-1 {
+  transform: translate(-45.8%, 82.3%) rotate(180deg);
+}
+.chat .big-triangle-2 {
+  transform: translate(-45.7%, 153%) rotate(225deg);
+}
+.chat .medium-triangle {
+  transform: translate(-31.2%, 68%) rotate(45deg);
+}
+.chat .small-triangle-1 {
+  transform: translate(40%, -31.7%) rotate(-90deg);
+}
+.chat .small-triangle-2 {
+  transform: translate(15%, -6.6%);
+}
+.chat .small-square {
+  transform: translate(15%, 43.4%);
+}
+.chat .parallelogram {
+  transform: translate(-116%, 152.9%) rotate(-45deg);
+}
+
+/* Transformation en girafe */
+.girafe .big-triangle-1 {
+  transform: translate(0.5%, 108%) rotate(180deg);
+}
+.girafe .big-triangle-2 {
+  transform: translate(-48.9%, 109%) rotate(-90deg);
+}
+.girafe .medium-triangle {
+  transform: translate(100%, -69%) rotate(-180deg);
+}
+.girafe .small-triangle-1 {
+  transform: translate(0.5%, 10%) rotate(90deg);
+}
+.girafe .small-triangle-2 {
+  transform: translate(25.5%, 84%) rotate(180deg);
+}
+.girafe .small-square {
+  transform: translate(25.2%, 83.7%);
+}
+.girafe .parallelogram {
+  transform: translate(0.3%, 9.4%);
 }
 
 /* ============================================================================

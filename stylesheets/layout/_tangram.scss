@@ -1,18 +1,20 @@
 .container-general {
-    position: relative;
-    margin-inline: auto;
-    width: 80%;
-    aspect-ratio: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .canvas {
-      width: 25%;
-      height: 25%;
-      position: absolute;
-  }
-  
+  position: relative;
+  margin-inline: auto;
+  width: 80%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.canvas {
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    transition-duration: 500ms;
+    transition-property: transform;
+}
 
 .big-triangle-1 {
     clip-path: polygon(50% 50%, 0% 0%, 0px 100%);
