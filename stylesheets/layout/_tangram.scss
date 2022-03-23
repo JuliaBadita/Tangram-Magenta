@@ -1,8 +1,18 @@
-.canvas {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-}
+.container-general {
+    position: relative;
+    margin-inline: auto;
+    width: 80%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .canvas {
+      width: 25%;
+      height: 25%;
+      position: absolute;
+  }
+  
 
 .big-triangle-1 {
     clip-path: polygon(50% 50%, 0% 0%, 0px 100%);

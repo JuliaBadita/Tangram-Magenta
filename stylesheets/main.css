@@ -448,9 +448,18 @@ body {
 /* ============================================================================
   Navbar
    ============================================================================ */
+.container-general {
+  position: relative;
+  margin-inline: auto;
+  width: 80%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .canvas {
-  width: 200px;
-  height: 200px;
+  width: 25%;
+  height: 25%;
   position: absolute;
 }
 
@@ -494,6 +503,38 @@ body {
   -webkit-clip-path: polygon(75% 75%, 75% 25%, 100% 50%, 100% 100%);
           clip-path: polygon(75% 75%, 75% 25%, 100% 50%, 100% 100%);
   background-color: #5656b1;
+}
+
+.button {
+  position: relative;
+}
+
+.big-triangle-1 {
+  transform: rotate(-65deg) translate(-45%, 64%);
+}
+
+.big-triangle-2 {
+  transform: rotate(25deg) translate(-35%, 45%);
+}
+
+.small-square {
+  transform: rotate(25deg) translate(15%, 95%);
+}
+
+.small-triangle-1 {
+  transform: rotate(-65deg) translate(-20%, 40%);
+}
+
+.small-triangle-2 {
+  transform: rotate(25deg) translate(15%, 45%);
+}
+
+.medium-triangle {
+  transform: rotate(-200deg) translate(15%, -69%);
+}
+
+.parallelogram {
+  transform: rotate(-20deg) translate(-115%, 69%);
 }
 
 /* ============================================================================
