@@ -1,7 +1,19 @@
+.container-general {
+  position: relative;
+  margin-inline: auto;
+  width: 80%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
 .canvas {
-    width: 200px;
-    height: 200px;
+    width: 25%;
+    height: 25%;
     position: absolute;
+    transition-duration: 500ms;
+    transition-property: transform;
 }
 
 .big-triangle-1 {
