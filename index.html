@@ -28,8 +28,14 @@
 </head>
 
 <body>
+
+  <section>
+    <button id="chat" onClick="changerForme('chat');">Chat</button>
+    <button id="girafe" onClick="changerForme('girafe');">Girafe</button>
   
-  <section class="container">
+  </section>
+  
+  <section id="figure" class="container-general">
     <div class="canvas big-triangle-1"></div>
     <div class="canvas big-triangle-2"></div>
     <div class="canvas medium-triangle"></div>
@@ -40,10 +46,28 @@
   
   </section>
 
+  
+
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    function changerForme(forme){
+      switch (forme){
+        case 'chat':
+          document.getElementById("figure").classList.toggle("girafe", false);
+          document.getElementById("figure").classList.toggle("chat");
+          break;
+        case 'girafe':
+          document.getElementById("figure").classList.toggle("chat", false);
+          document.getElementById("figure").classList.toggle("girafe");
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
 
 
 </body>
