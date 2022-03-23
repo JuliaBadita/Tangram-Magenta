@@ -521,6 +521,28 @@ header .models li {
   background-color: #5656b1;
 }
 
+.bat .big-triangle-1 {
+  transform: rotate(-65deg) translate(-45%, 64%);
+}
+.bat .big-triangle-2 {
+  transform: rotate(25deg) translate(-35%, 45%);
+}
+.bat .small-square {
+  transform: rotate(25deg) translate(15%, 95%);
+}
+.bat .small-triangle-1 {
+  transform: rotate(-65deg) translate(-20%, 40%);
+}
+.bat .small-triangle-2 {
+  transform: rotate(25deg) translate(15%, 45%);
+}
+.bat .medium-triangle {
+  transform: rotate(-200deg) translate(15%, -69%);
+}
+.bat .parallelogram {
+  transform: rotate(-20deg) translate(-115%, 69%);
+}
+
 /* Transformation en chat */
 .chat .big-triangle-1 {
   transform: translate(-45.8%, 82.3%) rotate(180deg);
