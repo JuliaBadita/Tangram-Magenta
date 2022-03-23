@@ -448,6 +448,54 @@ body {
 /* ============================================================================
   Navbar
    ============================================================================ */
+.canvas {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.big-triangle-1 {
+  -webkit-clip-path: polygon(50% 50%, 0% 0%, 0px 100%);
+          clip-path: polygon(50% 50%, 0% 0%, 0px 100%);
+  background-color: #ffb100;
+}
+
+.big-triangle-2 {
+  -webkit-clip-path: polygon(50% 50%, 0px 100%, 100% 100%);
+          clip-path: polygon(50% 50%, 0px 100%, 100% 100%);
+  background-color: #2bb156;
+}
+
+.medium-triangle {
+  -webkit-clip-path: polygon(100% 50%, 100% 0%, 50% 0%);
+          clip-path: polygon(100% 50%, 100% 0%, 50% 0%);
+  background-color: #81b12b;
+}
+
+.small-triangle-1 {
+  -webkit-clip-path: polygon(50% 0%, 25% 25%, 0px 0%);
+          clip-path: polygon(50% 0%, 25% 25%, 0px 0%);
+  background-color: #2b81ff;
+}
+
+.small-triangle-2 {
+  -webkit-clip-path: polygon(75% 75%, 75% 25%, 50% 50%);
+          clip-path: polygon(75% 75%, 75% 25%, 50% 50%);
+  background-color: #ff812b;
+}
+
+.small-square {
+  -webkit-clip-path: polygon(75% 25%, 50% 0%, 25% 25%, 50% 50%);
+          clip-path: polygon(75% 25%, 50% 0%, 25% 25%, 50% 50%);
+  background-color: #ff5656;
+}
+
+.parallelogram {
+  -webkit-clip-path: polygon(75% 75%, 75% 25%, 100% 50%, 100% 100%);
+          clip-path: polygon(75% 75%, 75% 25%, 100% 50%, 100% 100%);
+  background-color: #5656b1;
+}
+
 /* ============================================================================
    Buttons
     ============================================================================ */

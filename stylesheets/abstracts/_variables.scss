@@ -69,3 +69,21 @@ $breakpoints: (
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
+
+
+
+/// Colors of shapes
+/// @type Color
+$color-big-triangle-1: rgb(255,177,0);
+$color-big-triangle-2: rgb(43,177,86);
+$color-medium-triangle: rgb(129,177,43);
+$color-small-triangle-1: rgb(43,129,255);
+$color-small-triangle-2:rgb(255,129,43);
+$color-small-square: rgb(255,86,86);
+$color-parallelogram: rgb(86,86,177);
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
