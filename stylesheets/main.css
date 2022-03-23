@@ -44,7 +44,8 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -188,9 +189,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -198,9 +199,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -209,9 +210,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -229,7 +230,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -261,9 +263,10 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -272,8 +275,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -281,7 +284,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -291,7 +294,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -342,7 +345,8 @@ template {
  * Set up a decent box model on the root element
  */
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /**
@@ -354,7 +358,8 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 /**
@@ -364,6 +369,7 @@ a {
   color: #e50050;
   text-decoration: none;
 }
+
 a:hover, a:active, a:focus {
   color: #222222;
   text-decoration: underline;
@@ -382,7 +388,7 @@ body {
  */
 .clearfix::after {
   clear: both;
-  content: "";
+  content: '';
   display: table;
 }
 
@@ -437,27 +443,31 @@ body {
 }
 
 /* ============================================================================
-   Header
-    ============================================================================ */
+    Header
+     ============================================================================ */
 header {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 header .models {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
   list-style-type: none;
 }
+
 header .models li {
   cursor: pointer;
 }
 
 /* ============================================================================
-   Footer
-    ============================================================================ */
+    Footer
+     ============================================================================ */
 /* ============================================================================
-    Grid
-    ============================================================================ */
+     Grid
+     ============================================================================ */
 /* ============================================================================
   Navbar
    ============================================================================ */
@@ -466,8 +476,12 @@ header .models li {
   margin-inline: auto;
   width: 80%;
   aspect-ratio: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 100px;
 }
 
@@ -475,8 +489,12 @@ header .models li {
   width: 25%;
   height: 25%;
   position: absolute;
-  transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 .big-triangle-1 {
@@ -522,76 +540,163 @@ header .models li {
 }
 
 .bat .big-triangle-1 {
-  transform: rotate(-65deg) translate(-45%, 64%);
+  -webkit-transform: rotate(-65deg) translate(-45%, 64%);
+          transform: rotate(-65deg) translate(-45%, 64%);
 }
+
 .bat .big-triangle-2 {
-  transform: rotate(25deg) translate(-35%, 45%);
+  -webkit-transform: rotate(25deg) translate(-35%, 45%);
+          transform: rotate(25deg) translate(-35%, 45%);
 }
+
 .bat .small-square {
-  transform: rotate(25deg) translate(15%, 95%);
+  -webkit-transform: rotate(25deg) translate(15%, 95%);
+          transform: rotate(25deg) translate(15%, 95%);
 }
+
 .bat .small-triangle-1 {
-  transform: rotate(-65deg) translate(-20%, 40%);
+  -webkit-transform: rotate(-65deg) translate(-20%, 40%);
+          transform: rotate(-65deg) translate(-20%, 40%);
 }
+
 .bat .small-triangle-2 {
-  transform: rotate(25deg) translate(15%, 45%);
+  -webkit-transform: rotate(25deg) translate(15%, 45%);
+          transform: rotate(25deg) translate(15%, 45%);
 }
+
 .bat .medium-triangle {
-  transform: rotate(-200deg) translate(15%, -69%);
+  -webkit-transform: rotate(-200deg) translate(15%, -69%);
+          transform: rotate(-200deg) translate(15%, -69%);
 }
+
 .bat .parallelogram {
-  transform: rotate(-20deg) translate(-115%, 69%);
+  -webkit-transform: rotate(-20deg) translate(-115%, 69%);
+          transform: rotate(-20deg) translate(-115%, 69%);
 }
 
 /* Transformation en chat */
 .chat .big-triangle-1 {
-  transform: translate(-45.8%, 82.3%) rotate(180deg);
+  -webkit-transform: translate(-45.8%, 82.3%) rotate(180deg);
+          transform: translate(-45.8%, 82.3%) rotate(180deg);
 }
+
 .chat .big-triangle-2 {
-  transform: translate(-45.7%, 153%) rotate(225deg);
+  -webkit-transform: translate(-45.7%, 153%) rotate(225deg);
+          transform: translate(-45.7%, 153%) rotate(225deg);
 }
+
 .chat .medium-triangle {
-  transform: translate(-31.2%, 68%) rotate(45deg);
+  -webkit-transform: translate(-31.2%, 68%) rotate(45deg);
+          transform: translate(-31.2%, 68%) rotate(45deg);
 }
+
 .chat .small-triangle-1 {
-  transform: translate(40%, -31.7%) rotate(-90deg);
+  -webkit-transform: translate(40%, -31.7%) rotate(-90deg);
+          transform: translate(40%, -31.7%) rotate(-90deg);
 }
+
 .chat .small-triangle-2 {
-  transform: translate(15%, -6.6%);
+  -webkit-transform: translate(15%, -6.6%);
+          transform: translate(15%, -6.6%);
 }
+
 .chat .small-square {
-  transform: translate(15%, 43.4%);
+  -webkit-transform: translate(15%, 43.4%);
+          transform: translate(15%, 43.4%);
 }
+
 .chat .parallelogram {
-  transform: translate(-116%, 152.9%) rotate(-45deg);
+  -webkit-transform: translate(-116%, 152.9%) rotate(-45deg);
+          transform: translate(-116%, 152.9%) rotate(-45deg);
 }
 
 /* Transformation en girafe */
 .girafe .big-triangle-1 {
-  transform: translate(0.5%, 108%) rotate(180deg);
+  -webkit-transform: translate(0.5%, 108%) rotate(180deg);
+          transform: translate(0.5%, 108%) rotate(180deg);
 }
+
 .girafe .big-triangle-2 {
-  transform: translate(-48.9%, 109%) rotate(-90deg);
+  -webkit-transform: translate(-48.9%, 109%) rotate(-90deg);
+          transform: translate(-48.9%, 109%) rotate(-90deg);
 }
+
 .girafe .medium-triangle {
-  transform: translate(100%, -69%) rotate(-180deg);
+  -webkit-transform: translate(100%, -69%) rotate(-180deg);
+          transform: translate(100%, -69%) rotate(-180deg);
 }
+
 .girafe .small-triangle-1 {
-  transform: translate(0.5%, 10%) rotate(90deg);
+  -webkit-transform: translate(0.5%, 10%) rotate(90deg);
+          transform: translate(0.5%, 10%) rotate(90deg);
 }
+
 .girafe .small-triangle-2 {
-  transform: translate(25.5%, 84%) rotate(180deg);
+  -webkit-transform: translate(25.5%, 84%) rotate(180deg);
+          transform: translate(25.5%, 84%) rotate(180deg);
 }
+
 .girafe .small-square {
-  transform: translate(25.2%, 83.7%);
+  -webkit-transform: translate(25.2%, 83.7%);
+          transform: translate(25.2%, 83.7%);
 }
+
 .girafe .parallelogram {
-  transform: translate(0.3%, 9.4%);
+  -webkit-transform: translate(0.3%, 9.4%);
+          transform: translate(0.3%, 9.4%);
+}
+
+.otarie .big-triangle-1 {
+  -webkit-transform-origin: 25% 50%;
+          transform-origin: 25% 50%;
+  -webkit-transform: rotate(160deg) translate(0, 0);
+          transform: rotate(160deg) translate(0, 0);
+}
+
+.otarie .big-triangle-2 {
+  -webkit-transform-origin: 50% 75%;
+          transform-origin: 50% 75%;
+  -webkit-transform: rotate(205deg) translate(-48px, 48px);
+          transform: rotate(205deg) translate(-48px, 48px);
+}
+
+.otarie .small-square {
+  -webkit-transform: translate(-81px, -57px) rotate(-20deg);
+          transform: translate(-81px, -57px) rotate(-20deg);
+}
+
+.otarie .small-triangle-1 {
+  -webkit-transform-origin: 25% 12.5%;
+          transform-origin: 25% 12.5%;
+  -webkit-transform: translate(-49px, 44px) rotate(-110deg);
+          transform: translate(-49px, 44px) rotate(-110deg);
+}
+
+.otarie .small-triangle-2 {
+  -webkit-transform-origin: 67.5% 50%;
+          transform-origin: 67.5% 50%;
+  -webkit-transform: translate(142px, -6px) rotate(-110deg);
+          transform: translate(142px, -6px) rotate(-110deg);
+}
+
+.otarie .medium-triangle {
+  -webkit-transform-origin: 75% 12.5%;
+          transform-origin: 75% 12.5%;
+  -webkit-transform: translate(-194px, -109px) rotate(-20deg);
+          transform: translate(-194px, -109px) rotate(-20deg);
+}
+
+.otarie .parallelogram {
+  -webkit-transform-origin: 87.5% 62.5%;
+          transform-origin: 87.5% 62.5%;
+  -webkit-transform: translate(-247px, -28px) rotateY(180deg) rotate(20deg);
+          transform: translate(-247px, -28px) rotateY(180deg) rotate(20deg);
 }
 
 /* ============================================================================
-   Buttons
-    ============================================================================ */
+    Buttons
+     ============================================================================ */
 /* ============================================================================
-   Carousel 
-    ============================================================================ *//*# sourceMappingURL=main.css.map */
+    Carousel 
+     ============================================================================ */
+/*# sourceMappingURL=main.css.map */
