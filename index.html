@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 
   <title>Tangram</title>
-  
+
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,7 +18,7 @@
   <link rel="apple-touch-icon" href="icon.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="16x16"  href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
 
 
   <!-- Stylesheets -->
@@ -29,14 +29,15 @@
 
 <body>
 
-  <section>
-    
-    <button id="chat" onClick="changerForme('chat');">Chat</button>
-    <button id="girafe" onClick="changerForme('girafe');">Girafe</button>
-    <button id="bat" onClick="changerForme('bat');">Chauve-souris</button>
-  
-  </section>
-  
+
+  <header>
+    <h1>Tangram Magenta</h1>
+    <ul class="models">
+      <li>chat</li>
+      <li>girafe</li>
+    </ul>
+  </header>
+
   <section id="figure" class="container-general">
     <div class="canvas big-triangle-1"></div>
     <div class="canvas big-triangle-2"></div>
@@ -46,33 +47,13 @@
     <div class="canvas small-square"></div>
     <div class="canvas parallelogram"></div>
 
-    
   </section>
- 
-
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/bat.js"></script>
-  <script>
-    function changerForme(forme){
-      switch (forme){
-        case 'chat':
-          document.getElementById("figure").classList.toggle("girafe", false);
-          document.getElementById("figure").classList.toggle("chat");
-          break;
-        case 'girafe':
-          document.getElementById("figure").classList.toggle("chat", false);
-          document.getElementById("figure").classList.toggle("girafe");
-          break;
-        default:
-          break;
-      }
-    }
-  </script>
 
-  
 </body>
 
 </html>

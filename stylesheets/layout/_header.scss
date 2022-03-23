@@ -1,3 +1,18 @@
  /* ============================================================================
     Header
      ============================================================================ */
+
+header {
+   max-width: 1200px;
+   margin: 0 auto;
+   .models {
+      display: flex;
+      // justify-content: space-between;
+      gap: 1rem;
+      list-style-type: none;
+      li {
+         cursor: pointer; 
+      }
+   }
+}
+
