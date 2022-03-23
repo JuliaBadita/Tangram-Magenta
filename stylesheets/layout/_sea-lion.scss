@@ -3,35 +3,38 @@
 .otarie {
     .big-triangle-1 {
       transform-origin: 25% 50%;
-      transform: rotate(160deg) translate(0,0);
+      transform: rotate(156deg) translate(30%,-30%);
     }
     
     .big-triangle-2 {
       transform-origin: 50% 75%;
-      transform: rotate(205deg) translate(-48px, 48px);
+      transform: rotate(-159deg) translate(-21%, -21%);
     }
     
     .small-square {
-      transform: translate(-81px, -57px) rotate(-20deg) ;
+      transform-origin: 50% 55%;
+      transform: rotate(-23.8deg) translate(-51%, -4%)
     }
     
     .small-triangle-1 {
+      // display: none;
       transform-origin: 25% 12.5%;
-      transform: translate(-49px, 44px) rotate(-110deg) ;
+      transform:   rotate(-114deg) translate(-39.5%, -57.5%);
     }
     
     .small-triangle-2 {
       transform-origin: 67.5% 50%;
-      transform: translate(142px, -6px) rotate(-110deg);
+      transform: rotate(-114.2deg) translate(-45.5%, 26.4%);
     }
     
     .medium-triangle {
       transform-origin: 75% 12.5%;
-      transform: translate(-194px, -109px) rotate(-20deg);
+      transform: rotate(-24.6deg) translate(-90.5%, -42.8%);
     }
     
     .parallelogram {
+      // display: none;
       transform-origin: 87.5% 62.5%;
-      transform: translate(-247px, -28px) rotateY(180deg) rotate(20deg);
+      transform:  rotate(-24deg) rotateY(180deg) translate(119.2%, -19%);
     }
   }

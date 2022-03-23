@@ -649,48 +649,50 @@ header .models li {
 .otarie .big-triangle-1 {
   -webkit-transform-origin: 25% 50%;
           transform-origin: 25% 50%;
-  -webkit-transform: rotate(160deg) translate(0, 0);
-          transform: rotate(160deg) translate(0, 0);
+  -webkit-transform: rotate(156deg) translate(30%, -30%);
+          transform: rotate(156deg) translate(30%, -30%);
 }
 
 .otarie .big-triangle-2 {
   -webkit-transform-origin: 50% 75%;
           transform-origin: 50% 75%;
-  -webkit-transform: rotate(205deg) translate(-48px, 48px);
-          transform: rotate(205deg) translate(-48px, 48px);
+  -webkit-transform: rotate(-159deg) translate(-21%, -21%);
+          transform: rotate(-159deg) translate(-21%, -21%);
 }
 
 .otarie .small-square {
-  -webkit-transform: translate(-81px, -57px) rotate(-20deg);
-          transform: translate(-81px, -57px) rotate(-20deg);
+  -webkit-transform-origin: 50% 55%;
+          transform-origin: 50% 55%;
+  -webkit-transform: rotate(-23.8deg) translate(-51%, -4%);
+          transform: rotate(-23.8deg) translate(-51%, -4%);
 }
 
 .otarie .small-triangle-1 {
   -webkit-transform-origin: 25% 12.5%;
           transform-origin: 25% 12.5%;
-  -webkit-transform: translate(-49px, 44px) rotate(-110deg);
-          transform: translate(-49px, 44px) rotate(-110deg);
+  -webkit-transform: rotate(-114deg) translate(-39.5%, -57.5%);
+          transform: rotate(-114deg) translate(-39.5%, -57.5%);
 }
 
 .otarie .small-triangle-2 {
   -webkit-transform-origin: 67.5% 50%;
           transform-origin: 67.5% 50%;
-  -webkit-transform: translate(142px, -6px) rotate(-110deg);
-          transform: translate(142px, -6px) rotate(-110deg);
+  -webkit-transform: rotate(-114.2deg) translate(-45.5%, 26.4%);
+          transform: rotate(-114.2deg) translate(-45.5%, 26.4%);
 }
 
 .otarie .medium-triangle {
   -webkit-transform-origin: 75% 12.5%;
           transform-origin: 75% 12.5%;
-  -webkit-transform: translate(-194px, -109px) rotate(-20deg);
-          transform: translate(-194px, -109px) rotate(-20deg);
+  -webkit-transform: rotate(-24.6deg) translate(-90.5%, -42.8%);
+          transform: rotate(-24.6deg) translate(-90.5%, -42.8%);
 }
 
 .otarie .parallelogram {
   -webkit-transform-origin: 87.5% 62.5%;
           transform-origin: 87.5% 62.5%;
-  -webkit-transform: translate(-247px, -28px) rotateY(180deg) rotate(20deg);
-          transform: translate(-247px, -28px) rotateY(180deg) rotate(20deg);
+  -webkit-transform: rotate(-24deg) rotateY(180deg) translate(119.2%, -19%);
+          transform: rotate(-24deg) rotateY(180deg) translate(119.2%, -19%);
 }
 
 /* ============================================================================
