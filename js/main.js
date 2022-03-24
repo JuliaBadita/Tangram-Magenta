@@ -18,8 +18,9 @@ const app = {
         this.modelsEl.addEventListener('click', (e) => {
             // console.log('removing', this.figureLastClass, 'class');
             this.figureEl.classList.remove(this.figureLastClass);
-            const modelNewClass = e.target.innerText;
-            // console.log('adding', modelNewClass, 'class');
+            const modelNewClass = e.target.id;
+            console.log(e.target);
+             console.log('adding', modelNewClass, 'class');
             this.figureEl.classList.add(modelNewClass);
             this.figureLastClass = modelNewClass;
         })
