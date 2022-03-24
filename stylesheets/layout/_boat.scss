@@ -1,0 +1,24 @@
+/* Transform in boat */
+.boat {
+  .big-triangle-1 {
+    transform: translate(64.9%, 10%);
+  }
+  .big-triangle-2 {
+    transform: translate(15%, 45%) rotate(-225deg);
+  }
+  .medium-triangle {
+    transform: translate(29.7%, 24.6%) rotate(135deg);
+  }
+  .small-triangle-1{
+    transform: translate(15%, 10%) rotate(180deg);
+  }
+  .small-triangle-2 {
+    transform: translate(15%, -40%) rotate(-45deg);
+  }
+  .small-square {
+    transform: translate(64.9%, 60%);
+  }
+  .parallelogram {
+    transform: translate(29.9%, 59.9%) rotate(135deg);
+  }
+}
