@@ -452,6 +452,19 @@ header .models li {
   cursor: pointer;
 }
 
+h1 {
+  display: none;
+}
+
+header .logo {
+  height: 100px;
+}
+
+header .silhouette-tangram {
+  height: 60px;
+  margin: 20px;
+}
+
 /* ============================================================================
    Footer
     ============================================================================ */
@@ -543,50 +556,73 @@ header .models li {
   transform: rotate(-20deg) translate(-115%, 69%);
 }
 
-/* Transformation en chat */
-.chat .big-triangle-1 {
-  transform: translate(-45.8%, 82.3%) rotate(180deg);
+/* Transform in cat */
+.cat .big-triangle-1 {
+  transform: translate(-45.8%, 63.6%) rotate(180deg);
 }
-.chat .big-triangle-2 {
-  transform: translate(-45.7%, 153%) rotate(225deg);
+.cat .big-triangle-2 {
+  transform: translate(-45.8%, 134%) rotate(225deg);
 }
-.chat .medium-triangle {
-  transform: translate(-31.2%, 68%) rotate(45deg);
+.cat .medium-triangle {
+  transform: translate(-31.2%, 49.1%) rotate(45deg);
 }
-.chat .small-triangle-1 {
-  transform: translate(40%, -31.7%) rotate(-90deg);
+.cat .small-triangle-1 {
+  transform: translate(40.3%, -49.9%) rotate(-90deg);
 }
-.chat .small-triangle-2 {
-  transform: translate(15%, -6.6%);
+.cat .small-triangle-2 {
+  transform: translate(15%, -24.9%);
 }
-.chat .small-square {
-  transform: translate(15%, 43.4%);
+.cat .small-square {
+  transform: translate(15.1%, 25%);
 }
-.chat .parallelogram {
-  transform: translate(-116%, 152.9%) rotate(-45deg);
+.cat .parallelogram {
+  transform: translate(-116.1%, 134%) rotate(-45deg);
 }
 
-/* Transformation en girafe */
-.girafe .big-triangle-1 {
+/* Transform in giraffe */
+.giraffe .big-triangle-1 {
   transform: translate(0.5%, 108%) rotate(180deg);
 }
-.girafe .big-triangle-2 {
+.giraffe .big-triangle-2 {
   transform: translate(-48.9%, 109%) rotate(-90deg);
 }
-.girafe .medium-triangle {
+.giraffe .medium-triangle {
   transform: translate(100%, -69%) rotate(-180deg);
 }
-.girafe .small-triangle-1 {
+.giraffe .small-triangle-1 {
   transform: translate(0.5%, 10%) rotate(90deg);
 }
-.girafe .small-triangle-2 {
+.giraffe .small-triangle-2 {
   transform: translate(25.5%, 84%) rotate(180deg);
 }
-.girafe .small-square {
+.giraffe .small-square {
   transform: translate(25.2%, 83.7%);
 }
-.girafe .parallelogram {
+.giraffe .parallelogram {
   transform: translate(0.3%, 9.4%);
+}
+
+/* Transform in boat */
+.boat .big-triangle-1 {
+  transform: translate(64.9%, 10%);
+}
+.boat .big-triangle-2 {
+  transform: translate(15%, 45%) rotate(-225deg);
+}
+.boat .medium-triangle {
+  transform: translate(29.7%, 24.6%) rotate(135deg);
+}
+.boat .small-triangle-1 {
+  transform: translate(15%, 10%) rotate(180deg);
+}
+.boat .small-triangle-2 {
+  transform: translate(15%, -40%) rotate(-45deg);
+}
+.boat .small-square {
+  transform: translate(64.9%, 60%);
+}
+.boat .parallelogram {
+  transform: translate(29.9%, 59.9%) rotate(135deg);
 }
 
 /* ============================================================================
