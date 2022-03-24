@@ -1,0 +1,24 @@
+/* Transform in cat */
+.cat {
+  .big-triangle-1 {
+    transform: translate(-45.8%, 63.6%) rotate(180deg);
+  }
+  .big-triangle-2 {
+    transform: translate(-45.8%, 134%) rotate(225deg);
+  }
+  .medium-triangle {
+    transform: translate(-31.2%, 49.1%) rotate(45deg);
+  }
+  .small-triangle-1{
+    transform: translate(40.3%, -49.9%) rotate(-90deg);
+  }
+  .small-triangle-2 {
+    transform: translate(15%, -24.9%);
+  }
+  .small-square {
+    transform: translate(15.1%, 25%);
+  }
+  .parallelogram {
+    transform: translate(-116.1%, 134%) rotate(-45deg);
+  }
+}
