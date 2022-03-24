@@ -557,32 +557,26 @@ header .silhouette-tangram {
   transform: rotate(-20deg) translate(-115%, 69%);
 }
 
-.big-triangle-1 {
+.bear .big-triangle-1 {
   transform: translate(85%, 5%);
 }
-
-.big-triangle-2 {
+.bear .big-triangle-2 {
   transform: rotate(45deg) translate(-7%, -56.5%);
 }
-
-.small-square {
+.bear .small-square {
   transform: rotate(45deg) translate(-56.5%, 43%);
 }
-
-.small-triangle-1 {
+.bear .small-triangle-1 {
   transform: rotate(-45deg) translate(22%, 113.5%);
 }
-
-.small-triangle-2 {
+.bear .small-triangle-2 {
   transform: rotate(-135deg) translate(56.4%, -42.7%);
 }
-
-.medium-triangle {
+.bear .medium-triangle {
   transform: rotate(180deg) translate(-14.5%, 45%);
 }
-
-.parallelogram {
-  transform: rotate(135deg) translate(-15%, 10%);
+.bear .parallelogram {
+  transform: rotateY(180deg) rotate(-45deg) translate(-28%, 28.5%);
 }
 
 /* Transform in cat */
