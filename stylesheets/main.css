@@ -444,7 +444,7 @@ header {
   margin: 0 auto;
   text-align: center;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
   header {
     text-align: left;
   }
@@ -488,7 +488,7 @@ header .models li {
   display: inline-block;
   width: 30%;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
   header .models {
     display: flex;
     text-align: left;
