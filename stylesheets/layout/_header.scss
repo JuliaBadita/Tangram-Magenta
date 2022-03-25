@@ -14,7 +14,10 @@ header {
       padding:5px;
       @include media-between("medium", "large") {
          height:70px;
-     }
+      }
+      &:hover {
+         cursor: pointer;
+      }
    }
    .silhouette-tangram {
       height:60px;

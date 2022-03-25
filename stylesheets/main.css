@@ -458,6 +458,9 @@ header .logo {
     height: 70px;
   }
 }
+header .logo:hover {
+  cursor: pointer;
+}
 header .silhouette-tangram {
   height: 60px;
   margin: 20px;
