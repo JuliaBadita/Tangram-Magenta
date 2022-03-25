@@ -6,6 +6,14 @@
   display: flex;
   justify-content: center;
   padding-top: 100px;
+  @include media-min('medium'){
+    width:40%;
+    padding-top:20px;
+  }
+  @include media-min('large'){
+    width:50%;
+    padding-top:30px;
+  }
 }
 
 .canvas {
