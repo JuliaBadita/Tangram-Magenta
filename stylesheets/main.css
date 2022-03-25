@@ -483,6 +483,7 @@ header .models {
   position: fixed;
   width: 100%;
   bottom: 0;
+  margin: 0px;
 }
 header .models li {
   display: inline-block;
@@ -526,7 +527,7 @@ h1 {
 }
 @media screen and (min-width: 800px) {
   .container-general {
-    width: 40%;
+    width: 30%;
     padding-top: 20px;
   }
 }

@@ -7,7 +7,7 @@
   justify-content: center;
   padding-top: 100px;
   @include media-min('medium'){
-    width:40%;
+    width:30%;
     padding-top:20px;
   }
   @include media-min('large'){
