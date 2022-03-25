@@ -438,13 +438,13 @@ body {
 
 /* ============================================================================
    Header
-    ============================================================================ */
+     ============================================================================ */
 header {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
   header {
     text-align: left;
   }
@@ -453,7 +453,7 @@ header .logo {
   height: 100px;
   padding: 5px;
 }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
+@media screen and (min-width: 500px) and (max-width: 1023px) {
   header .logo {
     height: 70px;
   }
@@ -468,10 +468,14 @@ header .silhouette-tangram {
 @media screen and (min-width: 800px) and (max-width: 1023px) {
   header .silhouette-tangram {
     height: 40px;
-    margin: 0px 20px;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  header .silhouette-tangram {
+    height: 30px;
+  }
+}
+@media screen and (min-width: 500px) {
   header .silhouette-tangram {
     margin: 0px 20px;
   }
@@ -483,12 +487,14 @@ header .models {
   position: fixed;
   width: 100%;
   bottom: 0;
+  margin: 0px;
 }
 header .models li {
   display: inline-block;
   width: 30%;
+  z-index: 1;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
   header .models {
     display: flex;
     text-align: left;
@@ -517,22 +523,22 @@ h1 {
 .container-general {
   position: relative;
   margin-inline: auto;
-  width: 80%;
+  width: 60%;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
   padding-top: 100px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
   .container-general {
-    width: 40%;
+    width: 35%;
     padding-top: 20px;
   }
 }
 @media screen and (min-width: 1024px) {
   .container-general {
     width: 50%;
-    padding-top: 30px;
+    padding-top: 60px;
   }
 }
 

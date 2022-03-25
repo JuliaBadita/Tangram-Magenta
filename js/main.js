@@ -22,11 +22,15 @@ const app = {
             this.figureEl.classList.remove(this.figureLastClass);
         })
         this.modelsEl.addEventListener('click', (e) => {
-            // console.log('removing', this.figureLastClass, 'class');
             this.figureEl.classList.remove(this.figureLastClass);
-            const modelNewClass = e.target.id;
-            console.log(e.target);
-            console.log('adding', modelNewClass, 'class');
+            let modelNewClass="";
+            // if click on li instead of img silhouette, we search for child's id
+            if (e.target.children.length != 0){
+                modelNewClass = e.target.children[0].id;
+            }
+            else {
+                modelNewClass = e.target.id;
+            }
             this.figureEl.classList.add(modelNewClass);
             this.figureLastClass = modelNewClass;
         })
