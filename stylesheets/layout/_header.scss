@@ -12,7 +12,7 @@ header {
    .logo {
       height:100px;
       padding:5px;
-      @include media-between("medium", "large") {
+      @include media-between("small", "large") {
          height:70px;
       }
       &:hover {
@@ -24,9 +24,11 @@ header {
       margin:20px;
       @include media-between("medium", "large") {
          height:40px;
-         margin:0px 20px;
       }
-      @include media-min("medium"){
+      @include media-between("small", "medium") {
+         height:30px;
+      }
+      @include media-min("small"){
             margin:0px 20px;
       }
    }
