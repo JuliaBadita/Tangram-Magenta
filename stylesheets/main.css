@@ -487,6 +487,7 @@ header .models {
 header .models li {
   display: inline-block;
   width: 30%;
+  z-index: 1;
 }
 @media screen and (min-width: 500px) {
   header .models {

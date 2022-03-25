@@ -40,6 +40,7 @@ header {
       li {
          display: inline-block;
          width: 30%;
+         z-index:1;
       }
       
       @include media-min('small'){
