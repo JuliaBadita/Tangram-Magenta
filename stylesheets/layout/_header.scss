@@ -12,10 +12,20 @@ header {
    .logo {
       height:100px;
       padding:5px;
+      @include media-between("medium", "large") {
+         height:70px;
+     }
    }
    .silhouette-tangram {
       height:60px;
       margin:20px;
+      @include media-between("medium", "large") {
+         height:40px;
+         margin:0px 20px;
+     }
+     @include media-min("medium"){
+         margin:0px 20px;
+     }
    }
    .models {
       padding-left: 0px;
@@ -36,8 +46,7 @@ header {
          position:initial;
          li {
             cursor: pointer; 
-            width:auto;
-            display:block;
+            width:100%;
          }
       }
    }

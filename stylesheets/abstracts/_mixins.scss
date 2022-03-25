@@ -44,3 +44,9 @@
   }
 }
 
+@mixin media-between($_keymin, $_keymax) {
+  @media screen and (min-width: map-get($breakpoints, $_keymin)) and (max-width: map-get($breakpoints, $_keymax) - 1) {
+      &{ @content; }
+  }
+}
+

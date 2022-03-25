@@ -1,0 +1,33 @@
+
+.fox{
+    /* jaune or */
+    .big-triangle-1 {
+        transform: translate(-108.5%, 17.5%) rotate(210deg);
+    }
+
+    /* vert emeraude */
+    .big-triangle-2 {
+        transform: translate(20%,35%) rotate(75deg);
+    }
+    /* vert moyen */
+    .medium-triangle {
+        transform: translate(2.5%,25%) rotate(210deg);
+    }
+    /* bleu */
+    .small-triangle-1{
+        transform: translate(5%,24.5%) rotate(75deg);
+        
+    }
+    /* orange */
+    .small-triangle-2 {
+        transform: translate(22%, -5%) rotate(165deg);  
+    }
+    /* rose */
+    .small-square {
+        transform: translate(5%, 25%) rotate(75deg);
+    }
+    /* bleu roi */
+    .parallelogram {
+        transform: translate(-170%, -5%) rotate(-20deg);
+    }
+}

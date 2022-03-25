@@ -453,9 +453,25 @@ header .logo {
   height: 100px;
   padding: 5px;
 }
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  header .logo {
+    height: 70px;
+  }
+}
 header .silhouette-tangram {
   height: 60px;
   margin: 20px;
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  header .silhouette-tangram {
+    height: 40px;
+    margin: 0px 20px;
+  }
+}
+@media screen and (min-width: 800px) {
+  header .silhouette-tangram {
+    margin: 0px 20px;
+  }
 }
 header .models {
   padding-left: 0px;
@@ -478,8 +494,7 @@ header .models li {
   }
   header .models li {
     cursor: pointer;
-    width: auto;
-    display: block;
+    width: 100%;
   }
 }
 
@@ -504,6 +519,18 @@ h1 {
   display: flex;
   justify-content: center;
   padding-top: 100px;
+}
+@media screen and (min-width: 800px) {
+  .container-general {
+    width: 40%;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-general {
+    width: 50%;
+    padding-top: 30px;
+  }
 }
 
 .canvas {
@@ -578,6 +605,57 @@ h1 {
   transform: rotate(-20deg) translate(-115%, 69%);
 }
 
+.sea-lion .big-triangle-1 {
+  transform-origin: 25% 50%;
+  transform: rotate(156deg) translate(30%, -30%);
+}
+.sea-lion .big-triangle-2 {
+  transform-origin: 50% 75%;
+  transform: rotate(-159deg) translate(-21%, -21%);
+}
+.sea-lion .small-square {
+  transform-origin: 50% 55%;
+  transform: rotate(-23.8deg) translate(-51%, -4%);
+}
+.sea-lion .small-triangle-1 {
+  transform-origin: 25% 12.5%;
+  transform: rotate(-114deg) translate(-39.5%, -57.5%);
+}
+.sea-lion .small-triangle-2 {
+  transform-origin: 67.5% 50%;
+  transform: rotate(-114.2deg) translate(-45.5%, 26.4%);
+}
+.sea-lion .medium-triangle {
+  transform-origin: 75% 12.5%;
+  transform: rotate(-24.6deg) translate(-90.5%, -42.8%);
+}
+.sea-lion .parallelogram {
+  transform-origin: 87.5% 62.5%;
+  transform: rotate(-24deg) rotateY(180deg) translate(119.2%, -19%);
+}
+
+.bear .big-triangle-1 {
+  transform: translate(85%, 5%);
+}
+.bear .big-triangle-2 {
+  transform: rotate(45deg) translate(-7%, -56.5%);
+}
+.bear .small-square {
+  transform: rotate(45deg) translate(-56.5%, 43%);
+}
+.bear .small-triangle-1 {
+  transform: rotate(-45deg) translate(22%, 113.5%);
+}
+.bear .small-triangle-2 {
+  transform: rotate(-135deg) translate(56.4%, -42.7%);
+}
+.bear .medium-triangle {
+  transform: rotate(180deg) translate(-14.5%, 45%);
+}
+.bear .parallelogram {
+  transform: rotateY(180deg) rotate(-45deg) translate(-28%, 28.5%);
+}
+
 /* Transform in cat */
 .cat .big-triangle-1 {
   transform: translate(-45.8%, 63.6%) rotate(180deg);
@@ -645,6 +723,68 @@ h1 {
 }
 .boat .parallelogram {
   transform: translate(29.9%, 59.9%) rotate(135deg);
+}
+
+.swan {
+  /* jaune or */
+  /* vert emeraude */
+  /* vert moyen */
+  /* bleu */
+  /* orange */
+  /* rose */
+  /* bleu roi */
+}
+.swan .big-triangle-1 {
+  transform: translate(120%, 190%) rotate(135deg);
+}
+.swan .big-triangle-2 {
+  transform: translate(170%, 170%) rotate(180deg);
+}
+.swan .medium-triangle {
+  transform: translate(155.5%, 155%) rotate(225deg);
+}
+.swan .small-triangle-1 {
+  transform: translate(146%, 65%) rotate(315deg);
+}
+.swan .small-triangle-2 {
+  transform: translate(110%, 130%) rotate(180deg);
+}
+.swan .small-square {
+  transform: translate(110%, 130%) rotate(0deg);
+}
+.swan .parallelogram {
+  transform: translate(85%, 55%) rotate(0deg);
+}
+
+.fox {
+  /* jaune or */
+  /* vert emeraude */
+  /* vert moyen */
+  /* bleu */
+  /* orange */
+  /* rose */
+  /* bleu roi */
+}
+.fox .big-triangle-1 {
+  transform: translate(-108.5%, 17.5%) rotate(210deg);
+}
+.fox .big-triangle-2 {
+  transform: translate(20%, 35%) rotate(75deg);
+}
+.fox .medium-triangle {
+  transform: translate(2.5%, 25%) rotate(210deg);
+}
+.fox .small-triangle-1 {
+  transform: translate(5%, 24.5%) rotate(75deg);
+}
+.fox .small-triangle-2 {
+  transform: translate(22%, -5%) rotate(165deg);
+}
+.fox .small-square {
+  transform: translate(5%, 25%) rotate(75deg);
+}
+.fox .parallelogram {
+  transform: translate(-170%, -5%) rotate(-20deg);
 }
 
 /* ============================================================================
