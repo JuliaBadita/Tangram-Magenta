@@ -9,18 +9,21 @@ const app = {
     figurEl : null,
     // last CSS class for the figure element
     figureLastClass : null,
+    // logo reset
+    resetEl : null,
 
     // models container is listening for click event
     // and change the figure element class
     init : function () {
         this.modelsEl = document.querySelector('header .models');
         this.figureEl = document.querySelector('section#figure');
+        this.resetEl = document.querySelector('header .logo');
         this.modelsEl.addEventListener('click', (e) => {
             // console.log('removing', this.figureLastClass, 'class');
             this.figureEl.classList.remove(this.figureLastClass);
             const modelNewClass = e.target.id;
             console.log(e.target);
-             console.log('adding', modelNewClass, 'class');
+            console.log('adding', modelNewClass, 'class');
             this.figureEl.classList.add(modelNewClass);
             this.figureLastClass = modelNewClass;
         })
