@@ -10,7 +10,7 @@ const app = {
     // last CSS class for the figure element
     figureLastClass : null,
     // logo reset
-    resetEl : null,
+    logoEl : null,
 
     // models container is listening for click event
     // and change the figure element class
