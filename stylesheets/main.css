@@ -708,6 +708,28 @@ header .silhouette-tangram {
   transform: translate(85%, 55%) rotate(0deg);
 }
 
+.pigeon .big-triangle-1 {
+  transform: rotate(45deg) translate(29.4%, 74.6%);
+}
+.pigeon .big-triangle-2 {
+  transform: rotate(-45deg) translate(-25%, -20%);
+}
+.pigeon .small-square {
+  transform: translate(-22.4%, -7.1%);
+}
+.pigeon .small-triangle-1 {
+  transform: rotate(135deg) translate(10.5%, 106%);
+}
+.pigeon .small-triangle-2 {
+  transform: rotate(-45deg) translate(-100%, 54.5%);
+}
+.pigeon .medium-triangle {
+  transform: rotate(-45deg) translate(-25.5%, 29.5%);
+}
+.pigeon .parallelogram {
+  transform: rotateX(180deg) rotate(-45deg) translate(-46%, -150%);
+}
+
 .fox {
   /* jaune or */
   /* vert emeraude */
