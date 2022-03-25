@@ -442,28 +442,64 @@ body {
 header {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
-header .models {
-  display: flex;
-  gap: 1rem;
-  list-style-type: none;
+@media screen and (min-width: 400px) {
+  header {
+    text-align: left;
+  }
 }
-header .models li {
-  cursor: pointer;
-}
-
-h1 {
-  display: none;
-}
-
 header .logo {
   height: 100px;
   padding: 5px;
 }
-
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  header .logo {
+    height: 70px;
+  }
+}
 header .silhouette-tangram {
   height: 60px;
   margin: 20px;
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  header .silhouette-tangram {
+    height: 40px;
+    margin: 0px 20px;
+  }
+}
+@media screen and (min-width: 800px) {
+  header .silhouette-tangram {
+    margin: 0px 20px;
+  }
+}
+header .models {
+  padding-left: 0px;
+  display: block;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+header .models li {
+  display: inline-block;
+  width: 30%;
+}
+@media screen and (min-width: 400px) {
+  header .models {
+    display: flex;
+    text-align: left;
+    width: auto;
+    position: initial;
+  }
+  header .models li {
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+h1 {
+  display: none;
 }
 
 /* ============================================================================
@@ -483,6 +519,18 @@ header .silhouette-tangram {
   display: flex;
   justify-content: center;
   padding-top: 100px;
+}
+@media screen and (min-width: 800px) {
+  .container-general {
+    width: 40%;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-general {
+    width: 50%;
+    padding-top: 30px;
+  }
 }
 
 .canvas {
