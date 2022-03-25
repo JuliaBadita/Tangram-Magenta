@@ -5,13 +5,40 @@
 header {
    max-width: 1200px;
    margin: 0 auto;
+   text-align:center;
+   @include media-min('small'){
+      text-align:left;
+   }
+   .logo {
+      height:100px;
+      padding:5px;
+   }
+   .silhouette-tangram {
+      height:60px;
+      margin:20px;
+   }
    .models {
-      display: flex;
-      // justify-content: space-between;
-      gap: 1rem;
-      list-style-type: none;
+      padding-left: 0px;
+      display: block;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
       li {
-         cursor: pointer; 
+         display: inline-block;
+         width: 30%;
+      }
+      
+      @include media-min('small'){
+         display: flex;
+         text-align:left;
+         width:auto;
+         position:initial;
+         li {
+            cursor: pointer; 
+            width:auto;
+            display:block;
+         }
       }
    }
 }
@@ -19,14 +46,3 @@ header {
 h1{
    display:none;
 }
-
-header .logo {
-   height:100px;
-   padding:5px;
-}
-
-header .silhouette-tangram {
-   height:60px;
-   margin:20px;
-}
-
