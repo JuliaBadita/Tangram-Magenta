@@ -438,7 +438,7 @@ body {
 
 /* ============================================================================
    Header
-    ============================================================================ */
+     ============================================================================ */
 header {
   max-width: 1200px;
   margin: 0 auto;
@@ -517,7 +517,7 @@ h1 {
 .container-general {
   position: relative;
   margin-inline: auto;
-  width: 80%;
+  width: 60%;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;

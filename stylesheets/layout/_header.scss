@@ -1,5 +1,5 @@
- /* ============================================================================
-    Header
+/* ============================================================================
+   Header
      ============================================================================ */
 
 header {
@@ -25,10 +25,10 @@ header {
       @include media-between("medium", "large") {
          height:40px;
          margin:0px 20px;
-     }
-     @include media-min("medium"){
-         margin:0px 20px;
-     }
+      }
+      @include media-min("medium"){
+            margin:0px 20px;
+      }
    }
    .models {
       padding-left: 0px;
