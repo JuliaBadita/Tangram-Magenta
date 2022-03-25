@@ -1,0 +1,31 @@
+/// Tangram pigeon
+
+.pigeon {
+    .big-triangle-1 {
+        transform: rotate(45deg) translate(29.4%, 74.6%);
+    }
+    
+    .big-triangle-2 {
+        transform: rotate(-45deg) translate(-25%, -20%);
+    }
+    
+    .small-square {
+        transform: translate(-22.4%, -7.1%);
+    }
+    
+    .small-triangle-1 {
+        transform: rotate(135deg) translate(10.5%, 106%);
+    }
+    
+    .small-triangle-2 {
+        transform: rotate(-45deg) translate(-100%, 54.5%);
+    }
+    
+    .medium-triangle {
+        transform: rotate(-45deg) translate(-25.5%, 29.5%);
+    }
+    
+    .parallelogram {
+        transform: rotateX(180deg) rotate(-45deg) translate(-46%, -150%);
+    }
+}
